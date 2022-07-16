@@ -17,6 +17,7 @@ services:
     restart: "no"
     volumes:
       - mysqldb_data:/var/lib/mysql
+      - ./init_mysql:/docker-entrypoint-initdb.d
 
   #---------------------------------------
   # phpmyadmin container
